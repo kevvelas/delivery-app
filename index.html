@@ -3,9 +3,58 @@
 <head>
     <meta charset="UTF-8">
     <title>My Order Now - App</title>
-    <script src="https://unpkg.com/@popperjs/core@2/dist/umd/popper.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/2abc745e94.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
-    
+    <header>
+        <div class="container">
+            <div class="row justify-content-center align-items-center">
+                <div class="col-auto">
+                    <h1>MyOrderNow</h1>
+                </div>
+                <div class="col-auto">
+                    <div class="avatar-container" data-bs-target="#profileOptions" data-bs-toggle="modal">
+                        <img src="img/avatar.jpg" alt="">
+                        <i class="fa-solid fa-gear"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="profileOptions" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+
+                <div class="modal-header">
+                  <h1 class="modal-title fs-5">Opciones</h1>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+
+                <div class="modal-body">
+                    <ul class="profile-options-list">
+                        <li>
+                            <a href="#"><i class="fa-solid fa-user"></i> Mi perfil</a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fa-solid fa-location-dot"></i> Mis direcciones</a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fa-solid fa-credit-card"></i> Mis tarjetas</a>
+                        </li>
+                        <li>
+                            <a href="#" class="text-danger"><i class="fa-solid fa-circle-xmark"></i> Cerrar sesión</a>
+                        </li>
+                    </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+    </header>
+
+    <script src="js/jquery.js"></script>
+    <script src="https://unpkg.com/@popperjs/core@2/dist/umd/popper.js"></script>
+    <script src="js/bootstrap.min.js"></script>
 </body>
 </html>
